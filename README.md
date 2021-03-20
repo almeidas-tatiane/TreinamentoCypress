@@ -1,3 +1,5 @@
+Exercicio apresentado no Treinamento de Cypress da Semana Agilizei por Samuel Lucas
+
 Terceiro dia de Treinamento do Agilizei
 Neste dia, aprendemos:
 1) Como carregar um página com dados armazenados no DB local (prepareLocalStorage). Isso otimizará nossos testes, diminuindo o tempo de execução para cadastrar novas entradas e saídas;
