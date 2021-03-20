@@ -1,7 +1,30 @@
 Exercicio apresentado no Treinamento de Cypress da Semana Agilizei por Samuel Lucas
 
-Terceiro dia de Treinamento do Agilizei
-Neste dia, aprendemos:
+Primeiro dia de Treinamento da Semana Agilizei
+Aprendemos:
+1) Para que serve o Cypress e suas limitações;
+2) Preparamos o ambiente; instalando os plugins necessários; e o Node.js
+3) Gerenciador de Pacotes do Nodes - npm
+a) Instalar: npm init --yes
+b) Instala o pacote Cypress: npm install -D cypress
+c) Para mudar a versão do Cypress: Vá no arquivo package.json e modifique a versãom em cypress
+d) Criar a estrutura de pastas no Cypress: npx cypress open
+           - np: Procura o pacote localmente
+           - x: Procura o pactoe globalmente
+           - cypress open: Abre o cypress e cria a estrutura de pasta
+           
+
+Segundo dia de Treinamento da Semana Agilizei
+Aprendemos:
+1) Executar em modo Mobile pelo usando as configurações do DevTools: npx cypress open --config viewportWidth=411,viewportHeight=823
+2) Executar os testes no modo headless: npx cypress run --config viewportWidth=411,viewportHeight=823
+           - Roda os testes em background, sem abrir o cypress
+           - Ao usar o modo headless, ele já grava o vídeo automaticamente e armazena em uma pasta video na estrutura do cypress
+
+
+
+Terceiro dia de Treinamento da Semana Agilizei
+Aprendemos:
 1) Como carregar um página com dados armazenados no DB local (prepareLocalStorage). Isso otimizará nossos testes, diminuindo o tempo de execução para cadastrar novas entradas e saídas;
 2) Ler cada linha de uma tabela através do comando .each($el,index,$list) -> No comando each passamos o elemento inicial ($el); o index (começa por 0); e a quantidade de itens da lista ($list) -> Comando cy.get('#data-table tbody tr')
            .each(($el, index, $list)=>
@@ -30,3 +53,11 @@ c) Para imprimir os valores formatados usamos o comando -> cy.log(format(text)) 
                 expect(formattedTotalDisplay).to.eq(expectedTotal)
            })
 
+
+Quarto dia de Treinamento da Semana Agilizei
+Aprendemos:
+1) Como vincular nosso código ao Dashboard do Cypress;
+2) Como subir o código para o GitHub usando linha de comando com o GitBash;
+3) Rodar os códigos na nuvem usando o Actions do GitHub para Continuons Integrations;
+4) Como encapsular uma RecordKey;
+5) Como salvar um video com um artefato de uma actions sempre que o código do GitHub for modificado.
